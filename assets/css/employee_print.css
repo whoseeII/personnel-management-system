@@ -1,0 +1,11 @@
+@media print {
+    /* Hide everything in the body when printing... */
+    body.employee-details * { display: none; }
+    /* ...except our special div. */
+    body.employee-details #print-details { display: block; }
+}
+
+@media screen {
+    /* Hide the special layer from the screen. */
+    #print-me { display: none; }
+}
